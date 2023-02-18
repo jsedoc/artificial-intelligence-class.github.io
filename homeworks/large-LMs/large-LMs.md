@@ -1,14 +1,4 @@
 ---
-layout: default
-img: gpt3-emily-dickinson.jpg
-img_link: https://twitter.com/xkcd/status/1514060688578260995
-caption: Emily Dickinson's thoughts on cryptocurrency as imagined by GPT3
-title: Large Language Models
-type: Homework
-number: 10
-active_tab: homework
-release_date: 2022-11-28
-due_date: 2022-12-12 23:59:00EDT
 materials:
     - 
       name: Colab Notebook for Large Language Models with the OpenAI API
