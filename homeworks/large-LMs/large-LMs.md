@@ -65,17 +65,17 @@ First, let's learn some basic terminology:
 
 Let's try it out.  Try pasting this prompt into the playground, pressing the "Generate" button, and see what it says:
 
-> My favorite professor at the University of Pennsylvania is 
+> My favorite professor at New York University is 
 
 Now try changing the prompt to 
 
-> My favorite professor at the University of Pennsylvania is Chris Callison-
+> My favorite professor at NYU in the Stern IOMS department is Professor Arun
 
-and generating again.  Now save its output for the end of the semester for your course reviews.  (Just kidding).  Here's an example of what it generated when I ran it. 
+and generating again. Here's an example of what it generated when I ran it. 
 
 
 <center>
-<img src="openai-playground-screenshot.png" class="img-responsive"/>
+    <img width="1576" alt="image" src="https://user-images.githubusercontent.com/5974598/219900004-8d299fef-8f74-4de7-aa81-1e03a2fad9b7.png" class="img-responsive"/>
 </center>
 Here's another [impressive example of what GPT-3 knows about the field of NLP.](openai-playground-screenshot-2.png)
 
@@ -124,7 +124,7 @@ import openai
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 response = openai.Completion.create(
-  model="text-davinci-002",
+  model="text-davinci-003",
   prompt="Poor English input: I eated the purple berries.\nGood English output: I ate the purple berries.\nPoor English input: Thank you for picking me as your designer. I’d appreciate it.\nGood English output: Thank you for choosing me as your designer. I appreciate it.\nPoor English input: The mentioned changes have done. or I did the alteration that you requested. or I changed things you wanted and did the modifications.\nGood English output: The requested changes have been made. or I made the alteration that you requested. or I changed things you wanted and made the modifications.\nPoor English input: I’d be more than happy to work with you in another project.\n",
   temperature=0.7,
   max_tokens=256,
